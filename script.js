@@ -140,10 +140,10 @@ generateDivs();
 
 
 
-document.getElementById('sub-div-id12').addEventListener('click', function() {
-    window.open(
-        'https://cafelp.nl/doneren/','_blank');    
-}, false);
+//document.getElementById('sub-div-id12').addEventListener('click', function() {
+//    window.open(
+//        'https://cafelp.nl/doneren/','_blank');    
+//}, false);
 
 window.onbeforeunload = function() {
     return "you can not refresh the page";
