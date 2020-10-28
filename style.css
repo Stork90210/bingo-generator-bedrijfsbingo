@@ -1,0 +1,205 @@
+/* Import fonts Let's Quiz */
+@font-face { 
+    font-family: Absara-sans; 
+    src: url("fonts/AbsaraSans-Regular.otf");
+}
+
+@font-face { 
+    font-family: Absara-sans-italic; 
+    src: url("fonts/AbsaraSans-RegularItalic.otf");
+    font-weight: italic, oblique;
+}/* Einde font imports */
+
+
+
+
+
+/* Page components */
+html {
+  height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    height: 100%;
+    font-family: Absara-sans, arial, sans-serif;
+}
+
+#main-div > ul {
+  font-size: 22px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 30px;
+  margin-right: 30px;
+  list-style: square;
+  line-height: 24px;
+}
+
+/* Einde page components */
+
+
+
+
+
+
+/* Bingo kaart */
+
+#main-container {
+    display: flex;
+    flex-wrap: wrap;
+    border: solid black;
+    justify-content: center;
+    margin-bottom: 50px;
+    margin-top: 10px;
+}
+
+.sub-div {
+    box-sizing: border-box;
+    border: 1px dashed black;
+    background-size: 100% 100%;
+    background-color: white;
+
+}
+
+#main-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    min-width: 950px;
+    user-select: none; /* standard syntax */
+    -webkit-user-select: none; /* webkit (safari, chrome) browsers */
+    -moz-user-select: none; /* mozilla browsers */
+    -khtml-user-select: none; /* webkit (konqueror) browsers */
+    -ms-user-select: none; /* IE10+ */
+  
+}
+
+/* Einde Bingo kaart */
+
+
+
+  
+/*Header & menu*/
+
+  header {
+    padding: 20px 0;
+    background-color: rgba(242,243,248,1);
+    box-shadow: 0 4px 6px rgba(0,0,0,.2);
+  }
+
+.container {
+    padding: 0 20px;
+    max-width: 960px;
+    margin: 0 auto;
+    
+  }
+  .logo-box {
+    float: left;
+    margin-right: 20px;
+  }
+  .logo-box a {
+    outline: none;
+    display: block;
+  }
+  .logo-box img {display: block;}
+  nav {
+    overflow: hidden;
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    float: right;
+  }
+  nav li {
+    display: inline-block;
+    margin-left: 25px;
+    height: 70px;
+    line-height: 70px;
+    transition: .5s linear;
+  }
+  nav a {
+    text-decoration: none;
+    font-family: Absara-sans-italic, arial, sans-serif;
+    font-size: 20px;
+    display: block;
+    position: relative;
+    color: #868686;
+    text-transform: uppercase;
+  }
+nav a:hover {
+    color: black;
+}
+  
+  @media screen and (max-width: 660px) {
+    header {text-align: center;}
+    .logo-box {
+      float: none;
+      display: inline-block;
+      margin: 0 0 16px 0;
+    }
+    ul {float: none;}
+    nav li:first-of-type {margin-left: 0;}
+  }
+  @media screen and (max-width: 550px) {
+  nav {overflow: visible;}
+  nav li {
+    display: block;
+    margin: 0;
+    height: 40px;
+    line-height: 40px;
+  }
+  nav li:hover {background: rgba(0,0,0,.1);}
+  nav a:after {content: none;}
+  }
+
+  /* Einde header & menu */
+
+  
+  
+  
+  
+  
+  /* Footer */
+  
+  footer{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(242,243,248,1);
+    align-items: center;
+    box-shadow: 
+      0 -4px 6px rgba(0,0,0,.2),
+      0 50vh 0 50vh  rgba(242,243,248,1);
+}
+
+/* Footer */
+
+#donate {
+  font-size: 30px;
+  text-align: center;
+  color: white;
+  background-color: rgb(120,190,23);
+  padding: 15px;
+  border-radius: 10px;
+  line-height: 70px;
+  text-decoration: none;
+  width: 600px;
+}
+
+#donate:hover {
+  background-color: #D14423;
+}
+
+@media print {
+  #donate {
+    display: none;
+  }
+
+  .nonprint {
+    display: none;
+  }
+}
